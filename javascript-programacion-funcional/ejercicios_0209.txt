@@ -1,0 +1,30 @@
+
+Codigo con errores de los ejercicios de js usando programación funcional.
+
+date: 02092026
+
+
+// funcion que calcula si un number is positive
+
+const cero = numIsCero => num === 0 ? true : false;
+
+const pos = numIsPos => n > 0 ? true : false;
+
+//cosnt negative = numIs...
+
+const result = num => {
+    
+    if (cero(num)) {
+        return "el numero es CERO";
+    } 
+
+    if (numIsPos(num)) {
+        return "el numero es POSITIVO(+)";
+    } else {
+        return "el numero es NEGATIVO(-)";
+    }
+}
+
+console.log(result(-1));
+console.log(result(0));
+console.log(result(1));
