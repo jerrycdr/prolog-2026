@@ -1,0 +1,23 @@
+
+
+// funciones de orden superior
+
+// 1. reduce
+const precios = [120, 200, 350, 100, 125, 175];
+
+// usamos una funcion para sumar (reducir) todos los precios del arreglo
+// a una sola expresion
+const total = precios.reduce((acumulador, currentNum) => acumulador + currentNum, 0);
+
+console.log(total);
+
+// 2. map, aplicamos una funcion dada a todos los elementos de una lista
+const duplica = precios.map( (n) => n * 2); // el () no es necesario en n
+console.log(duplica);
+
+// 3. setTimeout
+function saludaOAlgo() {
+    console.log("Hola profe, paseme porfa :D");
+}
+
+setTimeout(saludaOAlgo, 1600); // despues de 1.8 secs supuestamente..
