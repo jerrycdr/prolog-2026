@@ -44,14 +44,6 @@ fibonacci n =
                 else Right fibonacci(n - 1) + fibonacci (n - 2)
  -}
 
- -- supongamos que el usuario solo ingresa valores positivos
- fibonacci :: Int -> Int
- fibonacci n =
-    if n == 0
-        then 0
-        else if n == 1
-                then 1
-                else (n-1) + fibonacci (n - 1)
 
 
 
